@@ -1,0 +1,579 @@
+/*
+    Name: Benjamin Rhodes
+    Project: Personal Portfolio Project
+    Date: 11.19.2011
+    Verson: 1.0.0
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+:root{
+    --primary-color:#A6A29F;
+    --secondary-color:#A6635D;
+    --tertiary-color:#D9D9D9;
+    --white:#F2F2F2;
+    --black:#595959;
+    --text-color:#2d2d2d;
+}
+
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width:100%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--primary-color);
+}
+
+.container{
+    max-width:1050px;
+    width:90%;
+    margin:auto;
+}
+
+/* Header styles */
+
+header{
+    padding:1rem;
+}
+
+.nav{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+
+.navbar-brand{
+    display: block;
+    overflow:hidden;
+    background-image: url("../img/BR-icon.svg");
+    background-repeat:no-repeat;
+    height:200px;
+    background-position: 0 0;
+    background-size: center;
+    background-color: transparent;
+    text-indent: -99999999px;
+    flex: 0 0 calc(100% - 3rem);
+    max-width: calc(100% - 3rem);
+    background-position: center;
+}
+
+.navbar-toggler{
+    border:0 none;
+    background-color: var(--text-color);
+    color:var(--white);
+    width:2rem;
+    height: 2rem;
+    font-size: 1rem;
+    line-height: 1em;
+    cursor:pointer;
+    border-radius: 8px;
+    flex: 0 0 2rem;
+    max-width: 2rem;
+}
+
+.nav-bar{
+    color:var(--secondary-color)
+}
+
+.navbar,
+.navbar ul, 
+.navbar li {
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+}
+
+.navbar a:link,
+.navbar a:hover,
+.navbar a:visited,
+.navbar a:active{
+    display:block;
+    overflow: hidden;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.main-navigation{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.socials,
+.socials ul,
+.socials li,
+.socials a {
+    color: var(--text-color);
+    display:flex;
+    flex-direction: row wrap;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+}
+
+/*end of header styles */
+
+/* start of home style*/
+
+.ben-face{
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+.ben-text-info{
+    background-color: var(--tertiary-color);
+    border-radius: 12px;
+    text-align: center; 
+    padding:1rem; 
+    margin:4px 2px;  
+}
+
+.attributes{
+    padding: 1em;
+}
+
+.skills{
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    text-align: center; 
+    padding:1rem;
+    margin:4px 2px;
+    margin: 0 1rem;
+}
+
+.skills ul{
+    list-style-type: none;
+}
+
+.skills h4{
+    margin:4px 2px;
+}
+
+.knowledge{
+    background-color: var(--text-color);
+    border-radius: 12px;
+    text-align: center; 
+    padding:1rem;
+    margin:4px 2px;
+    color:var(--white);
+    margin: 0 1rem;
+}
+
+.knowledge ul{
+    list-style-type: none;
+}
+
+.knowledge h4{
+    margin:4px 2px;
+}
+
+.button{
+    background-color: var(--black);
+    border-radius: 12px;
+    color: var(--white);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.boxed-in-content ul{
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    text-align: center; 
+    padding:1rem;
+    list-style-type: none;
+}
+
+.type-projects-area{
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:1rem;
+}
+
+.type-projects-text {
+    background-color: var(--tertiary-color);
+    border-radius: 12px;
+    text-align: center; 
+    padding:1rem;
+}
+
+.fas-fa-angle-left{
+    position:relative;
+}
+
+.current-projects-area{
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:1rem;
+}
+
+.current-projects-text{
+    background-color: var(--tertiary-color);
+    border-radius: 12px;
+    text-align: center; 
+    padding:1rem;
+}
+
+/*footer start */
+
+.footer{
+    background-color: var(--black);
+    color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3;
+}
+
+.footer .navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1em;
+    text-align: center;
+}
+
+.disclaimer-1{
+    padding:1em;
+    text-align: center;
+}
+
+
+.disclaimer-2{
+    padding:1em;
+    text-align: center;
+}
+
+.footer-socials ul,
+.footer-socials li,
+.footer-socials a {
+    color: var(--white);
+    display:flex;
+    flex-direction: row wrap;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+}
+
+.contact-info{
+    padding:1em;
+    text-align: center;
+}
+
+/*footer end*/
+
+/*about me start */
+.cpu-pic{
+border-radius: 8px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+
+}
+
+.about-text{
+    background-color: var(--tertiary-color);
+    border-radius: 12px;
+    text-align: center; 
+    padding:1rem; 
+    margin:4px 2px;  
+}
+
+.ambitions-content{
+    
+    padding:1rem;
+}
+
+.the-future-content{
+    
+    padding:1rem;
+}
+
+.interests-content{
+    
+    padding:1rem;
+}
+
+.header-boxed{
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    text-align: center; 
+    padding:1rem;
+    margin:4px 2px;
+}
+
+.boxed-text{
+    background-color: var(--tertiary-color);
+    border-radius: 12px;
+    text-align: center; 
+    padding:1rem;
+}
+
+.why-me-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    padding:1rem;
+}
+
+.why-me-text{
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    text-align: center; 
+    padding:1rem;
+    margin:4px 2px;
+    
+}
+
+.working-shot{
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding:1rem;
+}
+
+
+/*start of Projects */
+
+.projects h2{
+    text-align: center;
+}
+
+.project-container{
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    text-align: center; 
+    padding:1rem;
+    margin:4px 2px;
+}
+
+.project-row-01{
+    
+    padding:1rem;
+    margin:2px 2px;
+}
+
+.project-row-02{
+    
+    padding:1rem;
+    margin:2px 2px;
+}
+
+.work-type{
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    text-align: center; 
+    padding:1rem;
+    margin:4px 2px;
+    margin-bottom: 1rem;
+}
+
+.work-type p{
+    margin-bottom: 1rem; 
+}
+
+.header-wt-01,
+.header-wt-02,
+.header-wt-03,
+.header-wt-04 {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+/*projects end*/
+
+/*contact starts */
+
+.header-container{
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    text-align: center; 
+    padding:1rem;
+    margin:4px 2px;
+}
+
+.connect-with-me-text{
+    padding:1rem;
+    margin:4px 2px;
+    text-align: center; 
+}
+
+.form-container{
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    padding:1rem;
+    margin:4px 2px;
+    
+
+}
+
+.submit-button,
+input, textarea{
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1.8rem;
+    display: block;
+    margin-bottom: 1rem;
+    
+}
+
+.form-container label{
+    display: block;
+    margin-bottom:.8rem;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+/*contact ends */
+
+/*individual projects */
+
+.split{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.split-img{
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+
+.text-split{
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    text-align: center; 
+    padding:1rem;
+    margin:4px 2px;
+}
+
+.ip-button{
+    background-color: var(--text-color);
+    border-radius: 12px;
+    color: var(--white);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*576px / 768px / 992px /1200px*/
+@media screen and (min-width:576px) {.container {max-width:576px;}}
+
+@media screen and (min-width:768px) {.container {max-width:768px;}}
+
+@media screen and (min-width:992px) {.container {max-width:992px;}}
+
+@media screen and (min-width: 576px){
+
+}
+
+@media screen and (min-width: 992px){
+    .attributes{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .skills{
+        width:49.5%;
+
+    }
+
+    .knowledge{
+        width:49.5%;
+    }
+
+    .ambitions-content{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+
+    .header-boxed{
+        width:49.5%;
+        padding:0;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boxed-text{
+        width:49.5%;
+    }
+    .the-future-content{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+
+    .interests-content{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+
+    .project-container{
+        display:flex;
+        flex-flow:row wrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+    .project-row-01{
+        width:49.5%;
+    }
+
+    .project-row-02{
+        width:49.5%;
+    }
+
+    .project-row-01-container,
+    .project-row-02-container{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
